@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+}
+
+#main {
+  background-image: url("./assets/img/grass_theme2.jpg");
+  background-size: contain;
+}
+
+
+@media (max-width: 880px) {
+  #inicio {
+    flex-direction: column;
+  }
+
+  .inicio-descripcion p {
+    margin-right: 0px;
+  }
+
+  #categorias .container-grid-categorias,
+  #torneos .container-grid-torneos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inicio-imagen img {
+    width: 400px;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+  #categorias .container-grid-categorias,
+  #torneos .container-grid-torneos  {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio-imagen img {
+    width: 300px;
+    margin: auto;
+  }
+
+}
